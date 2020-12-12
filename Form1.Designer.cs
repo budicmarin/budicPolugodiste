@@ -39,7 +39,8 @@
             this.textBoxModel = new System.Windows.Forms.TextBox();
             this.textBoxSnaga = new System.Windows.Forms.TextBox();
             this.comboBoxPovezivost = new System.Windows.Forms.ComboBox();
-            this.listBoxIspis = new System.Windows.Forms.ListBox();
+            this.dataGridViewTablica = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTablica)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUnesi
@@ -140,21 +141,22 @@
             this.comboBoxPovezivost.Size = new System.Drawing.Size(118, 24);
             this.comboBoxPovezivost.TabIndex = 10;
             // 
-            // listBoxIspis
+            // dataGridViewTablica
             // 
-            this.listBoxIspis.FormattingEnabled = true;
-            this.listBoxIspis.ItemHeight = 16;
-            this.listBoxIspis.Location = new System.Drawing.Point(12, 227);
-            this.listBoxIspis.Name = "listBoxIspis";
-            this.listBoxIspis.Size = new System.Drawing.Size(812, 244);
-            this.listBoxIspis.TabIndex = 11;
+            this.dataGridViewTablica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTablica.Location = new System.Drawing.Point(15, 235);
+            this.dataGridViewTablica.Name = "dataGridViewTablica";
+            this.dataGridViewTablica.RowHeadersWidth = 51;
+            this.dataGridViewTablica.RowTemplate.Height = 24;
+            this.dataGridViewTablica.Size = new System.Drawing.Size(809, 236);
+            this.dataGridViewTablica.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 483);
-            this.Controls.Add(this.listBoxIspis);
+            this.Controls.Add(this.dataGridViewTablica);
             this.Controls.Add(this.comboBoxPovezivost);
             this.Controls.Add(this.textBoxSnaga);
             this.Controls.Add(this.textBoxModel);
@@ -168,6 +170,7 @@
             this.Controls.Add(this.btnUnesi);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTablica)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +189,7 @@
         private System.Windows.Forms.TextBox textBoxModel;
         private System.Windows.Forms.TextBox textBoxSnaga;
         private System.Windows.Forms.ComboBox comboBoxPovezivost;
-        private System.Windows.Forms.ListBox listBoxIspis;
+        private System.Windows.Forms.DataGridView dataGridViewTablica;
     }
 }
 
